@@ -26,6 +26,12 @@ body {
   overflow: hidden;
   height: 321px;
   border-radius: 8px;
+  transition: border 0.1s;
+}
+
+.img-container:hover {
+  transition: border 0.1s;
+  border: 1px solid #2f415b;
 }
 
 .card {
@@ -43,7 +49,7 @@ body {
 }
 .card-img:hover {
   transition: transform 0.4s, filter 0.2s ease-in-out;
-  filter: blur(1.3px);
+  filter: blur(1px);
   transform: scale(1.1);
 }
 .card-title {
