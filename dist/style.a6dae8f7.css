@@ -22,26 +22,52 @@ body {
   height: 100vh;
 }
 
+.img-container {
+  overflow: hidden;
+  height: 321px;
+  border-radius: 8px;
+}
+
 .card {
-  width: 50%;
   max-width: 375px;
   background-color: #14253d;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   padding: 1.5em;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 .card-img {
-  width: 100%;
-  border-radius: 16px;
+  transition: transform 0.4s, filter 0.2s ease-in-out;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.card-img:hover {
+  transition: transform 0.4s, filter 0.2s ease-in-out;
+  filter: blur(1.3px);
+  transform: scale(1.1);
 }
 .card-title {
   color: white;
+  font-size: 1.3rem;
   font-weight: 600;
+  margin: 1em 0;
+}
+.card a {
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+.card a:hover,
+.card a:focus {
+  transition: color 0.2s ease-in-out;
+  color: #00fff7;
 }
 .card-desc {
   color: #8bacda;
   font-weight: 300;
-  font-size: 0.9875rem;
+  font-size: 1rem;
+  margin: 1em 0;
 }
 .card-value {
   color: #00fff7;
@@ -58,14 +84,11 @@ body {
   border: 2px solid white;
   border-radius: 50%;
   width: 40px;
-  height: 40px;
+  height: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 .card-username {
   color: #8bacda;
-}
-.card span {
-  color: white;
-  font-weight: 300;
 }
 
 .container {
@@ -92,7 +115,8 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 18px;
+  gap: 1em;
+  height: 3em;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */
