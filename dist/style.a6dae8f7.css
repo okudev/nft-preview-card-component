@@ -1,9 +1,98 @@
-body {
-  background-color: #0d192b;
+html {
+  font-size: 100%;
+  box-sizing: border-box;
 }
 
-h1 {
-  color: red;
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: #0d192b;
+  margin: 0;
+  padding: 0;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  width: 50%;
+  max-width: 375px;
+  background-color: #14253d;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 1.5em;
+  border-radius: 16px;
+}
+.card-img {
+  width: 100%;
+  border-radius: 16px;
+}
+.card-title {
+  color: white;
+  font-weight: 600;
+}
+.card-desc {
+  color: #8bacda;
+  font-weight: 300;
+  font-size: 0.9875rem;
+}
+.card-value {
+  color: #00fff7;
+  font-size: 0.9875rem;
+}
+.card-time-left {
+  color: #8bacda;
+  font-size: 0.9875rem;
+}
+.card-seperator {
+  border-bottom: solid 4px;
+}
+.card-user-img {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.card-username {
+  color: #8bacda;
+}
+.card span {
+  color: white;
+  font-weight: 300;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #2f415b;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.eth-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.time-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.user-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */

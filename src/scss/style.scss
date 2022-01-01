@@ -1,9 +1,110 @@
-$main-background: #0d192b;
+@use 'partials/colors';
+@use 'partials/globals';
 
-body {
-    background-color: $main-background;
+html {
+    font-size: 100%;
+    box-sizing: border-box;
 }
 
-h1 {
-    color: red;
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: colors.$main-background;
+    margin: 0;
+    padding: 0;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    width: 50%;
+    max-width: 375px;
+    background-color: colors.$card-background;
+    box-shadow: globals.$box-shadow;
+    padding: 1.5em;
+    border-radius: globals.$border-radius;
+
+    &-img {
+        width: 100%;
+        border-radius: globals.$border-radius;
+
+    }
+    
+    &-title {
+        color: colors.$white;
+        font-weight: 600;
+    }
+
+    &-desc {
+        color: colors.$soft-blue;
+        font-weight: 300;
+        font-size: 0.9875rem;
+    }
+
+    &-value {
+        color: colors.$cyan;
+        font-size: 0.9875rem;
+    }
+
+    &-time-left {
+        color: colors.$soft-blue;
+        font-size: 0.9875rem;
+    }
+
+    &-seperator {
+        border-bottom: solid 4px;
+    }
+
+    &-user-img {
+        border: 2px solid colors.$white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+
+    &-username {
+        color: colors.$soft-blue;
+
+    }
+
+    & span {
+        color: colors.$white;
+        font-weight: 300;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid colors.$seperator;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.eth-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.time-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.user-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
 }
