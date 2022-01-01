@@ -29,12 +29,6 @@ body {
     overflow: hidden;
     height: 321px;
     border-radius: globals.$border-radius;
-    transition: border 0.1s;
-}
-
-.img-container:hover {
-    transition: border 0.1s;
-    border: 1px solid colors.$seperator;
 }
 
 .card {
@@ -45,15 +39,14 @@ body {
     border-radius: globals.$border-radius;
 
     &-img {
-        transition: transform 0.4s, filter 0.2s ease-in-out;
+        transition: transform 0.3s ease-in-out;
         max-width: 100%;
         border-radius: globals.$border-radius;
         box-shadow: globals.$box-shadow;
     }
 
     &-img:hover {
-        transition: transform 0.4s, filter 0.2s ease-in-out;
-        filter: blur(1px);
+        transition: transform 0.3s ease-in-out;
         transform: scale(1.1);
     }
     
