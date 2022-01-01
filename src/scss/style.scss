@@ -66,7 +66,6 @@ body {
 
     & a {
         color: colors.$white;
-        font-weight: 300;
         text-decoration: none;
         transition: color 0.2s ease-in-out;
     }
@@ -134,6 +133,7 @@ body {
 .user-container {
     display: flex;
     justify-content: flex-start;
+    font-weight: 300;
     align-items: center;
     gap: 1em;
     height: 3em;
